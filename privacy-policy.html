@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — 2P Channel</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #FF2D55;
+    --black: #0D0D0D;
+    --white: #FAFAF8;
+    --gray: #6B6B6B;
+    --light: #F2F0ED;
+    --border: #E0DDD9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  /* ---- Header ---- */
+  header {
+    background: var(--black);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: var(--white);
+    letter-spacing: -1px;
+  }
+
+  .logo span {
+    color: var(--red);
+  }
+
+  .badge {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+
+  /* ---- Hero ---- */
+  .hero {
+    background: var(--black);
+    padding: 80px 40px 60px;
+    border-bottom: 3px solid var(--red);
+  }
+
+  .hero-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    color: var(--white);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    max-width: 680px;
+  }
+
+  .hero-meta {
+    margin-top: 24px;
+    display: flex;
+    gap: 32px;
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  .hero-meta strong {
+    color: var(--white);
+    font-weight: 400;
+  }
+
+  /* ---- Layout ---- */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 40px 120px;
+  }
+
+  /* ---- TOC ---- */
+  .toc {
+    background: var(--light);
+    border-left: 3px solid var(--red);
+    padding: 24px 28px;
+    margin-bottom: 56px;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .toc-title {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 12px;
+  }
+
+  .toc ol {
+    list-style: none;
+    counter-reset: toc;
+  }
+
+  .toc ol li {
+    counter-increment: toc;
+    display: flex;
+    gap: 10px;
+    padding: 4px 0;
+    font-size: 14px;
+  }
+
+  .toc ol li::before {
+    content: counter(toc, decimal-leading-zero);
+    color: var(--red);
+    font-weight: 500;
+    font-size: 12px;
+    padding-top: 2px;
+    flex-shrink: 0;
+  }
+
+  .toc a {
+    color: var(--black);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .toc a:hover {
+    border-color: var(--red);
+    color: var(--red);
+  }
+
+  /* ---- Sections ---- */
+  .section {
+    margin-bottom: 52px;
+    padding-top: 12px;
+  }
+
+  .section-number {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 8px;
+  }
+
+  .section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    color: var(--black);
+  }
+
+  .section p {
+    color: #333;
+    margin-bottom: 14px;
+    font-weight: 300;
+  }
+
+  .section ul {
+    list-style: none;
+    margin: 14px 0;
+  }
+
+  .section ul li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    font-weight: 300;
+    color: #333;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+  }
+
+  .section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    width: 6px;
+    height: 6px;
+    background: var(--red);
+    border-radius: 50%;
+  }
+
+  .highlight-box {
+    background: var(--light);
+    border: 1px solid var(--border);
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin: 16px 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #333;
+  }
+
+  .highlight-box strong {
+    font-weight: 500;
+    color: var(--black);
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ---- Divider ---- */
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  /* ---- Contact ---- */
+  .contact-card {
+    background: var(--black);
+    color: var(--white);
+    padding: 32px 36px;
+    border-radius: 12px;
+    margin-top: 48px;
+  }
+
+  .contact-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+
+  .contact-card p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 16px;
+  }
+
+  .contact-card a {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+
+  .contact-card a:hover {
+    border-color: var(--red);
+  }
+
+  /* ---- Footer ---- */
+  footer {
+    background: var(--light);
+    border-top: 1px solid var(--border);
+    padding: 24px 40px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  footer strong {
+    color: var(--black);
+    font-weight: 500;
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 600px) {
+    header { padding: 0 20px; }
+    .hero { padding: 48px 20px 40px; }
+    .container { padding: 40px 20px 80px; }
+    footer { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">2<span>P</span></div>
+  <div class="badge">Privacy Policy</div>
+</header>
+
+<div class="hero">
+  <div class="hero-label">Legal Document</div>
+  <h1>Privacy Policy</h1>
+  <div class="hero-meta">
+    <div>Effective date: <strong>April 14, 2025</strong></div>
+    <div>Last updated: <strong>April 14, 2025</strong></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#information">Information We Collect</a></li>
+      <li><a href="#usage">How We Use Your Information</a></li>
+      <li><a href="#tiktok">TikTok Integration</a></li>
+      <li><a href="#sharing">Data Sharing</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#rights">Your Rights</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <div class="section" id="overview">
+    <div class="section-number">01 — Overview</div>
+    <h2>Overview</h2>
+    <p>
+      This Privacy Policy describes how <strong>2P Channel</strong> ("we", "our", or "us") collects, uses, and handles information in connection with our content publishing automation tool. This tool is a personal-use application designed to automatically publish daily news videos to the operator's own TikTok account.
+    </p>
+    <div class="highlight-box">
+      <strong>Important notice</strong>
+      This application is operated solely for personal content publishing purposes. It is not a public-facing product or service. No user accounts are created and no third-party personal data is collected or processed.
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 2 -->
+  <div class="section" id="information">
+    <div class="section-number">02 — Information We Collect</div>
+    <h2>Information We Collect</h2>
+    <p>Given the personal-use nature of this application, the data collected is minimal and limited to what is necessary to operate the service:</p>
+    <ul>
+      <li>TikTok OAuth access tokens required to authenticate and publish content on the operator's behalf</li>
+      <li>Video metadata (title, description, hashtags) provided by the operator for each post</li>
+      <li>Technical logs for debugging purposes (timestamps, API response codes)</li>
+    </ul>
+    <p>We do <strong>not</strong> collect any personal information from third parties, viewers, or followers of the TikTok channel.</p>
+  </div>
+
+  <hr>
+
+  <!-- 3 -->
+  <div class="section" id="usage">
+    <div class="section-number">03 — How We Use Information</div>
+    <h2>How We Use Your Information</h2>
+    <p>The information collected is used exclusively to:</p>
+    <ul>
+      <li>Authenticate with TikTok's API on behalf of the channel operator</li>
+      <li>Schedule and automatically publish video content to the operator's TikTok account</li>
+      <li>Monitor upload status and handle errors in the automation workflow</li>
+    </ul>
+    <p>No data is used for advertising, analytics, or shared with any third party for commercial purposes.</p>
+  </div>
+
+  <hr>
+
+  <!-- 4 -->
+  <div class="section" id="tiktok">
+    <div class="section-number">04 — TikTok Integration</div>
+    <h2>TikTok Integration</h2>
+    <p>
+      This application integrates with the <strong>TikTok Content Posting API</strong> using the <code>video.publish</code> scope. This scope grants the application permission to upload videos directly to the operator's TikTok account.
+    </p>
+    <div class="highlight-box">
+      <strong>Scope used</strong>
+      <code>video.publish</code> — Allows posting videos to the authenticated TikTok account. No other scopes are requested or used.
+    </div>
+    <p>
+      Access tokens issued by TikTok are stored securely and are used solely for the purpose of publishing content. These tokens are never shared with any external party.
+    </p>
+    <p>
+      Our use of TikTok's API is subject to <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank" rel="noopener">TikTok's Privacy Policy</a> and <a href="https://developers.tiktok.com/doc/tiktok-api-developer-terms-of-use" target="_blank" rel="noopener">TikTok Developer Terms of Use</a>.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- 5 -->
+  <div class="section" id="sharing">
+    <div class="section-number">05 — Data Sharing</div>
+    <h2>Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, trade, or rent any information to third parties. Data is shared only in the following limited circumstances:</p>
+    <ul>
+      <li>With TikTok's platform as required to publish content via their API</li>
+      <li>If required by applicable law, regulation, or legal process</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <!-- 6 -->
+  <div class="section" id="retention">
+    <div class="section-number">06 — Data Retention</div>
+    <h2>Data Retention</h2>
+    <p>
+      TikTok access tokens are retained only as long as necessary to maintain the publishing automation workflow. Tokens are deleted or revoked when no longer needed, or upon request.
+    </p>
+    <p>
+      Technical logs are retained for a maximum of <strong>30 days</strong> for debugging purposes and are then permanently deleted.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- 7 -->
+  <div class="section" id="rights">
+    <div class="section-number">07 — Your Rights</div>
+    <h2>Your Rights</h2>
+    <p>As this is a personal-use tool, the only data subject is the operator of this application. As the operator, you have the right to:</p>
+    <ul>
+      <li>Access any data stored by this application at any time</li>
+      <li>Request immediate deletion of all stored tokens and logs</li>
+      <li>Revoke TikTok API access at any time via TikTok's developer portal</li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <!-- 8 -->
+  <div class="section" id="security">
+    <div class="section-number">08 — Security</div>
+    <h2>Security</h2>
+    <p>
+      We take reasonable technical measures to protect stored credentials and tokens, including environment variable storage and access control on server infrastructure. However, no method of electronic storage is 100% secure.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- 9 -->
+  <div class="section" id="changes">
+    <div class="section-number">09 — Changes to This Policy</div>
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. Continued use of the application after changes constitutes acceptance of the revised policy.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- 10 -->
+  <div class="section" id="contact">
+    <div class="section-number">10 — Contact Us</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+  </div>
+
+  <div class="contact-card">
+    <h3>2P Channel</h3>
+    <p>TikTok content publishing automation — personal use</p>
+    <a href="https://ai-enso.com">ai-enso.com</a>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 <strong>2P Channel</strong>. All rights reserved.
+  &nbsp;·&nbsp; This document was last updated on April 14, 2025.
+</footer>
+
+</body>
+</html>
